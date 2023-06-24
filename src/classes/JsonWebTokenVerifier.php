@@ -8,9 +8,9 @@ class JsonWebTokenVerifier {
         $this->rsa = $rsa;
     }
 
-    function verify($token, $publicKey) {
-        $exponent = Base64::fromUrlEncoding($publicKey->e);
-        $modulus = Base64::fromUrlEncoding($publicKey->n);
+    function verifySignature($token, $publicKey) {
+        $exponent = convert_base64url_to_base64($publicKey->e);
+        $modulus = convert_base64url_to_base64($publicKey->n);
         $rsaPublicKey = $this->getRsaPublicKey($exponent, $modulus);
         return openssl_verify($token->getData(), $token->getSignature(), $rsaPublicKey, OPENSSL_ALGO_SHA256);
     }

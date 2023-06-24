@@ -14,15 +14,15 @@ class JsonWebToken {
     }
 
     function getHeader() {
-        return json_decode(Base64::decode($this->header));
+        return json_decode(base64_decode($this->header));
     }
     
     function getBody() {
-        return json_decode(Base64::decode($this->body));
+        return json_decode(base64_decode($this->body));
     }
 
     function getSignature() {
-        return Base64::decode(Base64::fromUrlEncoding($this->signature));
+        return base64_decode(convert_base64url_to_base64($this->signature));
     }
 
     function getData() {

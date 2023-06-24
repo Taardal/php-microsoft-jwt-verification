@@ -8,9 +8,8 @@ class Request {
         $this->headers = getallheaders();
     }
 
-    function getBearerToken() {
-        $authorizationHeader = $this->headers["authorization"];
-        return explode(" ", $authorizationHeader)[1];
+    function getHeader($name) {
+        return $this->headers[$name];
     }
 
     static function receive() {
