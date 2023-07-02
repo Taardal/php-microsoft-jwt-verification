@@ -23,7 +23,7 @@ This is the OOP-version where the code is split into classes to show how they wo
 
 ### Getting the code&nbsp;:octocat:
 
-- Clone the repository: `git clone https://github.com/taardal/php-token-demo`
+- Clone the repository: `git clone https://github.com/Taardal/php-microsoft-jwt-verification.git`
 
 ### Running the app&nbsp;:rocket:
 
