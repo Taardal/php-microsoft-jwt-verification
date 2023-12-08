@@ -15,17 +15,17 @@ This is the simple and primitive version with a lot of logging, and where almost
 This is the OOP-version where the code is split into classes to show how they work, and how they can be used to organize code.
 
 
-# Prerequisites&nbsp;:vertical_traffic_light:
+# Prerequisites :vertical_traffic_light:
 - [Git][git:download]
 - [PHP][php:download]
 
-# Getting started&nbsp;:runner:
+# Getting started :runner:
 
-### Getting the code&nbsp;:octocat:
+### Getting the code :octocat:
 
 - Clone the repository: `git clone https://github.com/Taardal/php-microsoft-jwt-verification.git`
 
-### Running the app&nbsp;:rocket:
+### Running the app :rocket:
 
 - Export the ID-token as an environment variable: `export ID_TOKEN=...`
 - Run the PHP server: `php -S localhost:3000`
